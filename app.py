@@ -55,13 +55,13 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET')
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
-app.config['SQLALCHEMY_BINDS'] = {'two': os.environ.get('HEROKU_POSTGRESQL_BLUE_URL'),
-                                  'three': os.environ.get('HEROKU_POSTGRESQL_BRONZE_URL'),
-                                  'four': os.environ.get('HEROKU_POSTGRESQL_COPPER_URL'),
+app.config['SQLALCHEMY_BINDS'] = {'two': os.environ.get('HEROKU_POSTGRESQL_CYAN_URL'),
+                                  'three': os.environ.get('HEROKU_POSTGRESQL_GOLD_URL'),
+                                  'four': os.environ.get('HEROKU_POSTGRESQL_GREEN),
                                   'five': os.environ.get('HEROKU_POSTGRESQL_IVORY_URL'),
-                                  'six': os.environ.get('HEROKU_POSTGRESQL_NAVY_URL'),
+                                  'six': os.environ.get('HEROKU_POSTGRESQL_MAROON_URL'),
                                   'seven': os.environ.get('HEROKU_POSTGRESQL_PURPLE_URL'),
-                                  'eight': os.environ.get('HEROKU_POSTGRESQL_YELLOW_URL')}
+                                  'eight': os.environ.get('HEROKU_POSTGRESQL_ROSE_URL')}
 
 
 """
