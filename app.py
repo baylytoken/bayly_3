@@ -109,6 +109,8 @@ class MyAdminIndexView(AdminIndexView):
 admin = Admin(app, index_view = MyAdminIndexView(), name = 'Bayly Diagnostics', template_mode = 'bootstrap3')
 
 
+# REPLACING DATETIME VARIABLE
+# time_count_obj = 9000000000000000000000000000000
 
 class Record(db.Model):
     user_id = db.Column(db.Text, unique=True, nullable=False, primary_key=True, default=uuid.uuid4().hex)
@@ -687,6 +689,8 @@ def patient():
 
     return redirect(url_for('dashboard'))
 
+# REPLACE REGEX CHECKL WITH A MORE INCLUSIVE CHECK
+# regex = 
 
 @app.route('/registration', methods=['GET', 'POST'])
 def registration():
